@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fffdf5; /* warna background halaman */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* tengah horizontal */
+  align-items: center; /* tengah vertical */
+  height: 100vh; /* tinggi full layar */
+}
+
+.card {
+  background-color: white;
+  padding: 36px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 590px;
+  text-align: center;
+}
+
+.title {
+  margin:0;
+  font-size: 32px;
+}
+
+.navbar {
+  background-color: white;
+  padding: 13px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 50px;       /* atur tinggi logo */
+  display: block;     /* biar tidak ada space bawah */
+  margin-left: 100px;       /* center logo */
+}
+
+.login {
+  height: 100vh; /* tinggi full layar */
+  display: flex;
+  justify-content: center; /* tengah horizontal */
+  align-items: center; /* tengah vertical */
+  background-color: #fffdf5;
+}
+.login1 {
+  margin: 0;
+  transform: translateY(-280%);
+
+}
