@@ -1,51 +1,195 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fffdf5; /* warna background halaman */
+  background-color: #fffdf5;
 }
 
 .container {
   display: flex;
-  justify-content: center; /* tengah horizontal */
-  align-items: center; /* tengah vertical */
-  height: 100vh; /* tinggi full layar */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 .card {
   background-color: white;
-  padding: 36px;
+  padding: 2rem;
   border-radius: 10px;
+  max-width: 400px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 590px;
-  text-align: center;
+  width: 100%;
+  text-align: left;
 }
 
 .title {
   margin:0;
   font-size: 32px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #666;
+  text-align: center;
+  margin-top: -10px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.required {
+  color: red;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #666;
+  cursor: pointer;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-login {
+  background-color: #00c853;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-register {
+  background-color: #d7ffd9;
+  color: #00c853;
+  font-weight: bold;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.logo-google {
+  height: 18px;
 }
 
 .navbar {
   background-color: white;
   padding: 13px 20px;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .logo img {
-  height: 50px;       /* atur tinggi logo */
-  display: block;     /* biar tidak ada space bawah */
-  margin-left: 100px;       /* center logo */
+  height: 50px;
+  display: block;
+  margin: 0;
 }
 
 .login {
-  height: 100vh; /* tinggi full layar */
+  height: 100vh;
   display: flex;
-  justify-content: center; /* tengah horizontal */
-  align-items: center; /* tengah vertical */
+  justify-content: center;
+  align-items: center;
   background-color: #fffdf5;
 }
 .login1 {
   margin: 0;
   transform: translateY(-280%);
 
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }

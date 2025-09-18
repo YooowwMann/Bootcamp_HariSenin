@@ -2,9 +2,8 @@
 <html>
 <head>
   <title>Videobelajar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
 </head>
 <body>
  
@@ -19,15 +18,25 @@
     <h1 class="title">Masuk Ke Akun</h1>
     <p class="subtitle">Yuk, lanjutin belajarmu di videobelajar</p>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="Masukkan email kamu">
+    <label for="email">E-Mail <span class="required">*</span></label>
+      <input type="email" id="email" placeholder="Masukkan email" required>
 
-    <label for="password">Password <span class="required">*</span></label>
-    <div class="password-wrapper"><input type="password" id="password" placeholder="Masukkan kata sandi">
-    <span class="toggle-password">👁️</span>
-    </div>
-    
-    <a href="#" class="forgot">Lupa Password?</a>
+    <label for="password">Kata Sandi <span class="required">*</span></label>
+<div class="password-wrapper">
+  <input type="password" id="password" placeholder="Masukkan kata sandi" required>
+
+  <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" 
+     fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+     class="eye-icon">
+  <path id="eye-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+  <path id="eye-outline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7
+           -1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+</svg>
+</div>
+
+<a href="#" class="forgot">Lupa Password?</a>
 
     <button class="btn btn-login">Masuk</button>
     <button class="btn btn-register">Daftar</button>
@@ -38,7 +47,7 @@
       <img src="logos_google-icon.png" alt="Google" class="logo-google">Masuk dengan Google</button>
   </div>
 </div>
-  <script> //noting </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
