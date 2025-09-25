@@ -1,45 +1,64 @@
-body {
+/* Reset default */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #fffdf5;
 }
 
+/* Navbar */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 0;
+}
+
+/* Container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
   padding: 1rem;
+  background-color: #fffdf5;
 }
 
+/* Card */
 .card {
-  background-color: white;
+  background: white;
   padding: 2rem;
-  border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  text-align: left;
+  max-width: 540px;
 }
 
 .title {
-  margin:0;
-  font-size: 32px;
   text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-size: 17px;
-  color: #666;
   text-align: center;
-  margin-top: -10px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 label {
-  font-size: 16px;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
   display: block;
-  margin-top: 17px;
-  margin-bottom: 15px;
 }
 
 .required {
@@ -49,59 +68,59 @@ label {
 input {
   width: 100%;
   padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
-  box-sizing: border-box;
 }
 
+/* Password wrapper */
 .password-wrapper {
-  display: flex;
-  align-items: center;
   position: relative;
-  width: 100%;
 }
 
 .password-wrapper input {
-  flex: 1;
-  width: 100%;
-  padding: 10px;
   padding-right: 40px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 14px;
-  box-sizing: border-box;
 }
 
 .eye-icon {
   position: absolute;
   right: 10px;
   top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  color: #666;
+  transform: translateY(-80%);
+  width: 22px;
+  height: 22px;
   cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
 }
 
+.eye-icon:hover {
+  opacity: 1;
+}
+
+/* Lupa password */
 .forgot {
   display: block;
   text-align: right;
-  font-size: 12px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
   text-decoration: none;
   color: #555;
 }
 
+/* Buttons */
 .btn {
+  display: block;
   width: 100%;
+  text-align: center;
   padding: 12px;
   border-radius: 6px;
   margin: 5px 0;
   border: none;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 16px;
+  text-decoration: none;
 }
 
 .btn-login {
@@ -122,7 +141,7 @@ input {
   text-align: center;
   color: gray;
   font-size: 12px;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .divider::before,
@@ -146,50 +165,40 @@ input {
   height: 18px;
 }
 
-.navbar {
-  background-color: white;
-  padding: 13px 20px;
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.logo img {
-  height: 50px;
-  display: block;
-  margin: 0;
-}
-
-.login {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fffdf5;
-}
-.login1 {
-  margin: 0;
-  transform: translateY(-280%);
-
-}
-
-@media (max-width: 480px) {
+/* RESPONSIVE */
+@media (max-width: 768px) {
   .card {
-    margin: 20px;
-    padding: 20px;
+    padding: 1.5rem;
+    margin: 0 1rem;
   }
 
   .title {
     font-size: 1.5rem;
   }
 
-  .input {
-    font-size: 16px;
+  input {
+    font-size: 1rem;
   }
 
   .btn {
     font-size: 1rem;
-    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .logo {
+    height: 38px;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
   }
 }
