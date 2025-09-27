@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videobelajar.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="Logo.png" alt="Logo" class="logo">
+  </nav>
+
+  <!-- Container -->
+  <div class="container">
+    <div class="card">
+      <h2 class="title">Pendaftaran Akun</h2>
+      <p class="subtitle">Yuk, daftarkan akunmu sekarang juga!</p>
+
+      <!-- Form -->
+      <form>
+        <label>Nama Lengkap <span class="required">*</span></label>
+        <input type="text" placeholder="Masukkan nama lengkap" required>
+
+        <label>E-Mail <span class="required">*</span></label>
+        <input type="email" placeholder="Masukkan email" required>
+
+        <label>No. Hp <span class="required">*</span></label>
+        <div class="phone-wrapper">
+          <select>
+            <option value="+62">+62</option>
+            <option value="+60">+60</option>
+            <option value="+65">+65</option>
+          </select>
+          <input type="tel" placeholder="Masukkan nomor HP" required>
+        </div>
+
+        <label>Kata Sandi <span class="required">*</span></label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="Masukkan kata sandi" required>
+          <span class="eye-btn" onclick="togglePassword('password', this)">
+            <img src="eye-off.png" alt="Toggle Password" class="eye-icon">
+          </span>
+        </div>
+
+        <label>Konfirmasi Kata Sandi <span class="required">*</span></label>
+        <div class="password-wrapper">
+          <input type="password" id="confirm-password" placeholder="Konfirmasi kata sandi" required>
+          <span class="eye-btn" onclick="togglePassword('confirm-password', this)">
+            <img src="eye-off.png" alt="Toggle Password" class="eye-icon">
+          </span>
+        </div>
+
+        <a href="#" class="forgot">Lupa Password?</a>
+
+        <button type="submit" class="btn btn-register">Daftar</button>
+        <a href="../Login/login.html" class="btn btn-login">Masuk</a>
+
+        <div class="divider">atau</div>
+
+        <button type="button" class="btn btn-google">
+          <img src="google-icon.png" alt="Google" class="logo-google">
+          Daftar dengan Google
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword(id, element) {
+      const input = document.getElementById(id);
+      const icon = element.querySelector('img');
+      if (input.type === "password") {
+        input.type = "text";
+        icon.src = "eye-off.png";
+      } else {
+        input.type = "password";
+        icon.src = "eye-off.png";
+      }
+    }
+  </script>
+</body>
+</html>
