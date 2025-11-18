@@ -1,0 +1,26 @@
+const popularSeries = [
+  { id: 1, title: "Succession", poster: "https://image.tmdb.org/t/p/w500/7HW47XbkNQ5fiwQFYGWdw9gs144.jpg", rating: 9.8, year: 2018, type: "Series" },
+  { id: 2, title: "Stranger Things", poster: "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg", rating: 8.9, year: 2016, type: "Series" },
+  { id: 3, title: "Vikings", poster: "https://image.tmdb.org/t/p/w500/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg", rating: 8.6, year: 2013, type: "Series" },
+  { id: 4, title: "The Boys", poster: "https://image.tmdb.org/t/p/w500/stTEycfG9928HYGEISBFaG1ngjM.jpg", rating: 8.7, year: 2019, type: "Series" },
+  { id: 5, title: "Game of Thrones", poster: "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg", rating: 9.3, year: 2011, type: "Series" },
+  { id: 6, title: "Peaky Blinders", poster: "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg", rating: 9.8, year: 2013, type: "Series" },
+  { id: 7, title: "The Haunting of Bly Manor", poster: "https://image.tmdb.org/t/p/w500/4ZocdxnOO6q2UbdKye2wgofLFhB.jpg", rating: 7.9, year: 2020, type: "Series" },
+  { id: 8, title: "The Rings of Power", poster: "https://image.tmdb.org/t/p/w500/mYLOqiStMxDK3fYZFirgrMt8z5d.jpg", rating: 7.0, year: 2022, type: "Series" },
+  { id: 9, title: "Narcos", poster: "https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg", rating: 9.9, year: 2015, type: "Series" },
+  { id: 10, title: "The Last of Us", poster: "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg", rating: 9.9, year: 2023, type: "Series" },
+  { id: 11, title: "Westworld", poster: "https://image.tmdb.org/t/p/w500/y55oBgf6bVMI7sFNXwJDrSIxPQt.jpg", rating: 8.5, year: 2016, type: "Series" },
+  { id: 12, title: "Chernobyl", poster: "https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg", rating: 9.4, year: 2019, type: "Series" },
+  { id: 13, title: "The Pacific", poster: "https://image.tmdb.org/t/p/w500/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg", rating: 8.3, year: 2010, type: "Series" },
+  { id: 14, title: "Breaking Bad", poster: "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg", rating: 9.5, year: 2008, type: "Series" },
+  { id: 15, title: "Better Call Saul", poster: "https://image.tmdb.org/t/p/w500/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg", rating: 9.1, year: 2015, type: "Series" },
+  { id: 16, title: "The Walking Dead", poster: "https://image.tmdb.org/t/p/w500/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg", rating: 8.2, year: 2010, type: "Series" },
+  { id: 17, title: "House of the Dragon", poster: "https://image.tmdb.org/t/p/w500/1X4h40fcB4WWUmIBK0auT4zRBAV.jpg", rating: 8.5, year: 2022, type: "Series" },
+  { id: 18, title: "The Mandalorian", poster: "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg", rating: 8.5, year: 2019, type: "Series" },
+  { id: 19, title: "Loki", poster: "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg", rating: 8.4, year: 2021, type: "Series" },
+  { id: 20, title: "The Witcher", poster: "https://image.tmdb.org/t/p/w500/zrPpUlehQaBf8YX2NrVrKK8IEpf.jpg", rating: 8.1, year: 2019, type: "Series" },
+  { id: 21, title: "The Handmaid's Tale", poster: "https://image.tmdb.org/t/p/w500/oIkxqt6ug5zT5ZSUUyc1Iqopf02.jpg", rating: 8.2, year: 2017, type: "Series" },
+  { id: 22, title: "Dexter", poster: "https://image.tmdb.org/t/p/w500/58H6Ctze1nnpS0s9vPmAAzPcipR.jpg", rating: 8.2, year: 2006, type: "Series" },
+];
+
+export default popularSeries;
