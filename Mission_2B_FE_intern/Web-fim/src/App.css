@@ -1,0 +1,46 @@
+src/App.css
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.film-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.film-card:hover {
+  transform: scale(1.03);
+}
+
+.film-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.film-card h3 {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.film-card p {
+  margin: 0 10px 10px;
+  color: #666;
+}

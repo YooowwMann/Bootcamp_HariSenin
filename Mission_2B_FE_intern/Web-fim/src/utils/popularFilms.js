@@ -1,0 +1,27 @@
+const popularFilms = [
+  { id: 1, title: "Fight Club (Director's Cut)", poster: "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg", rating: 9.1, year: 1999, type: "Film" },
+  { id: 2, title: "Interstellar", poster: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg", rating: 8.6, year: 2014, type: "Film" },
+  { id: 3, title: "The Dark Knight", poster: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg", rating: 9.0, year: 2008, type: "Film" },
+  { id: 4, title: "The Lord of the Rings: The Return of the King", poster: "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg", rating: 9.0, year: 2003, type: "Film" },
+  { id: 5, title: "Avengers: Endgame", poster: "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", rating: 8.4, year: 2019, type: "Film" },
+  { id: 6, title: "Avatar", poster: "https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg", rating: 7.9, year: 2009, type: "Film" },
+  { id: 7, title: "Deadpool", poster: "https://image.tmdb.org/t/p/w500/fSRb7vyIP8rQpL0I47P3qUsEKX3.jpg", rating: 8.0, year: 2016, type: "Film" },
+  { id: 8, title: "Venom", poster: "https://image.tmdb.org/t/p/w500/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg", rating: 7.8, year: 2018, type: "Film" },
+  { id: 9, title: "Black Panther", poster: "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg", rating: 7.3, year: 2018, type: "Film" },
+  { id: 10, title: "Frozen", poster: "https://image.tmdb.org/t/p/w500/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg", rating: 7.3, year: 2013, type: "Film" },
+  { id: 11, title: "Avengers: Endgame (2021 re-entry)", poster: "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", rating: 8.4, year: 2021, type: "Film" },
+  { id: 12, title: "Frozen (2023 re-release)", poster: "https://image.tmdb.org/t/p/w500/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg", rating: 7.3, year: 2023, type: "Film" },
+  { id: 13, title: "Spider-Man: No Way Home", poster: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg", rating: 8.3, year: 2021, type: "Film" },
+  { id: 14, title: "Dune", poster: "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg", rating: 8.1, year: 2021, type: "Film" },
+  { id: 15, title: "Top Gun: Maverick", poster: "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg", rating: 8.4, year: 2022, type: "Film" },
+  { id: 16, title: "Everything Everywhere All at Once", poster: "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg", rating: 8.1, year: 2022, type: "Film" },
+  { id: 17, title: "The Lord of the Rings: The Fellowship of the Ring", poster: "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg", rating: 8.8, year: 2001, type: "Film" },
+  { id: 18, title: "Joker", poster: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg", rating: 8.5, year: 2019, type: "Film" },
+  { id: 19, title: "Avatar: The Way of Water", poster: "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg", rating: 7.6, year: 2022, type: "Film" },
+  { id: 20, title: "The Shawshank Redemption", poster: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg", rating: 9.3, year: 1994, type: "Film" },
+  { id: 21, title: "The Godfather", poster: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg", rating: 9.2, year: 1972, type: "Film" },
+  { id: 22, title: "The Godfather Part II", poster: "https://image.tmdb.org/t/p/w500/amvmeQWheahG3StKwIE1f7jRnkZ.jpg", rating: 9.0, year: 1974, type: "Film" },
+  { id: 23, title: "Parasite (Special Edition)", poster: "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg", rating: 9.1, year: 2019, type: "Film" },
+];
+
+export default popularFilms;
